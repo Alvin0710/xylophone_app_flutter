@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
         onPressed: () {
           soundKey(soundNumber);
         },
+        child: Text(''), //I use it because the flutter said that the FlatButton required a child
       ),
     );
   }
@@ -38,13 +39,13 @@ class _MyAppState extends State<MyApp> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        musicButton(Colors.teal[100], 1),
-        musicButton(Colors.teal[200], 2),
-        musicButton(Colors.teal[300], 3),
-        musicButton(Colors.teal[400], 4),
-        musicButton(Colors.teal[500], 5),
-        musicButton(Colors.teal[600], 6),
-        musicButton(Colors.teal[700], 7),
+        musicButton(Colors.teal[300], 1),
+        musicButton(Colors.teal[400], 2),
+        musicButton(Colors.teal[500], 3),
+        musicButton(Colors.teal[600], 4),
+        musicButton(Colors.teal[700], 5),
+        musicButton(Colors.teal[800], 6),
+        musicButton(Colors.teal[900], 7),
       ],
     );
   }
